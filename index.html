@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pour toi</title>
+<meta name="theme-color" content="#1a2333">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
+<style>
+:root{--mist:#dbe4ec;--navy:#1a2333;--ink:#0b1019;--slate:#536477;--rule:#9db1c4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--mist);color:var(--ink);font:400 17px/1.7 Geist,system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:
+ repeating-radial-gradient(circle at 88% 12%,transparent 0 150px,rgba(157,177,196,.55) 150px 151px),
+ repeating-radial-gradient(circle at 6% 92%,transparent 0 190px,rgba(157,177,196,.45) 190px 191px)}
+main{max-width:760px;margin:0 auto;padding:24px clamp(12px,3vw,24px) 48px}
+.slide{position:relative;margin:16px 0;border-radius:22px;padding:clamp(24px,5vw,44px);box-shadow:0 30px 60px -30px rgba(26,35,51,.45)}
+.slide::before{content:"";position:absolute;inset:12px;pointer-events:none;opacity:.4;background:
+ linear-gradient(currentColor,currentColor) 0 0/14px 1px no-repeat,linear-gradient(currentColor,currentColor) 0 0/1px 14px no-repeat,
+ linear-gradient(currentColor,currentColor) 100% 0/14px 1px no-repeat,linear-gradient(currentColor,currentColor) 100% 0/1px 14px no-repeat,
+ linear-gradient(currentColor,currentColor) 0 100%/14px 1px no-repeat,linear-gradient(currentColor,currentColor) 0 100%/1px 14px no-repeat,
+ linear-gradient(currentColor,currentColor) 100% 100%/14px 1px no-repeat,linear-gradient(currentColor,currentColor) 100% 100%/1px 14px no-repeat}
+.navy{background:var(--navy);color:#fff}.white{background:#fff}
+h1{font-weight:500;letter-spacing:-.045em;line-height:.95;margin:22px 0 14px;font-size:clamp(3rem,13vw,6.5rem);animation:streak .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes streak{from{opacity:0;transform:translateX(-80px) skewX(-10deg)}}
+.sub{margin:0;color:#b9c6d4}
+#msg{white-space:pre-wrap;overflow-wrap:anywhere}
+.sign{margin:28px 0 0;font-weight:500;font-size:1.2rem;letter-spacing:-.02em}
+@media(prefers-reduced-motion:reduce){h1{animation:none}}
+</style>
+</head>
+<body>
+<main>
+  <section class="slide navy">
+    <h1>Pour toi</h1>
+    <p class="sub">16 novembre 2026</p>
+  </section>
+  <section class="slide white">
+    <!-- ÉCRIS TON MESSAGE ENTRE LES DEUX BALISES. Les retours à la ligne sont conservés. -->
+    <div id="msg">Écris ici ton message.
+
+Tu peux faire plusieurs paragraphes, aussi longs que tu veux.</div>
+    <p class="sign">Eléa 💚</p>
+  </section>
+</main>
+</body>
+</html>
